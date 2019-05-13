@@ -16,7 +16,7 @@
 <body>
 	<header>
 		<nav class="navigation-wrapper"><a href="#">
-				<div class="logo"><img src="img/logo/logo.svg" alt="logo" /></div>
+				<div class="logo"><img src="img/logo.png" alt="logo" width="50px" height="auto" /></div>
 			</a>
 			<ul class="navigation">
 				<li class="navigation__item"><a class="navigation__link" href="#">Продукты</a></li>
@@ -34,17 +34,31 @@
 		</nav>
 		<section>
 			<div class="header-content container">
-				<h1 class="header-content__title">Hypophys</h1>
+				<div class="logo-title-wrapper"><img src="img/logo.png" alt="logo" />
+					<h1 class="header-content__title">Hypophys</h1>
+				</div>
 				<div class="header-content__description"></div>
 			</div>
 		</section>
 		<div class="dots-container">
-			<div class="dot active"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
+			<div class="dot dot--active">
+				<div class="dot-title dot-title--active">Продукты</div>
+			</div>
+			<div class="dot">
+				<div class="dot-title">Регламент</div>
+			</div>
+			<div class="dot">
+				<div class="dot-title">Регламент</div>
+			</div>
+			<div class="dot">
+				<div class="dot-title">Компания</div>
+			</div>
+			<div class="dot">
+				<div class="dot-title">Регламент</div>
+			</div>
+			<div class="dot">
+				<div class="dot-title">Продукты</div>
+			</div>
 		</div>
 	</header>
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
