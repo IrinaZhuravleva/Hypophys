@@ -3,17 +3,31 @@ html(lang="en")
 	include pages/_head
 
 	body
-		header
-			include pages/_navigation
-			include pages/_header-content
-			include pages/_vertical-menu.pug
-
-		//- include _quote
-		//- include _club-desc
-		//- include _shop
-		//- include _article-01
-		//- include _article-02
-		//- include _subscribe
-		//- include _camp
-		//- include _footer
+		include pages/_vertical-menu.pug
+		include pages/_burger-menu.pug
+		#fullpage
+			section.section
+				a(href="#products")
+				include pages/_navigation
+				include pages/_header-content
+				//- include pages/_vertical-menu.pug
+				
+			section.section
+				a(href="#reglament")
+			section.section
+				a(href="#experience")
+			section.section
+				a(href="#company")
+			section.section
+				a(href="#mass-media")
+			section.section
+				a(href="#shop")
+			//- include _quote
+			//- include _club-desc
+			//- include _shop
+			//- include _article-01
+			//- include _article-02
+			//- include _subscribe
+			//- include _camp
+			//- include _footer
 		include pages/_foot

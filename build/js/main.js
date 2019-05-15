@@ -1,50 +1,32 @@
 $(document).ready(function(){
 
-	
-	// phone-mask
+  var link = $('.burger-menu');
+  var link_active = $('.blockmenu_active');
+  var menu = $('.blockmenu');
+  var close = $('.blockmenu-close');
 
-	$(".phone-mask").mask("+7 (999) 999-99-99");
 
-	
-
-	//Проверка form-login.tpl
-	
-	$('#personal-info-form').on('submit', function(event){
-		event.preventDefault();
-
-		var	nameValid = true,
-			emailValid = true;
-
-		var nameValue = $('#nameValue').val();
-		console.log(nameValue);
-
-		var emailValue = $('#emailValue').val();
-		console.log(emailValue);
-
-		
-
-		if (nameValue == '') {
-			$('#nameError').fadeIn();
-			nameValid = false;
-		} else {
-			nameValid = true;
-		}
-
-		if (emailValue == '') {
-			$('#emailError').fadeIn();
-			emailValid = false;
-		} else {
-			emailValid = true;
-		}
-
-		
-
-		if (nameValid == true && emailValid == true) {
-			console.log("ok");
-			$('#personal-info-form').unbind('submit').submit();
-		} else {
-			console.log("fail");
-		}
+  link.click(function(){
+    menu.addClass('blockmenu_active');
+    link.css('display', 'none');
+	  });
+	  close.click(function(){
+	    menu.removeClass('blockmenu_active');
+	  });
+	  close.click(function(){
+	    link.css('display', 'block');
 	});
+
+	 // Fullpage scroll
+
+    var myFullpage = new fullpage('#fullpage', {
+        // anchors: ['firstPage', 'secondPage', '3rdPage'],
+        anchors: ['products', 'reglament'],
+        // sectionsColor: ['#C63D0F', '#1BBC9B'],
+        navigation: true,
+        navigationPosition: 'left',
+        // navigationTooltips: ['First page', 'Second page']
+    });
+
 	
 });

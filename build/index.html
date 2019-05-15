@@ -4,67 +4,86 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-	<title>Держава</title>
-	<link rel="stylesheet" href="libs/fontawesome/font-awesome.min.css" />
-	<link rel="stylesheet" href="libs/bootstrap-reboot/bootstrap-reboot.min.css" />
+	<title>Hyphosys</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+	<link rel="manifest" href="img/site.webmanifest" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,700,800&amp;subset=cyrillic-ext" rel="stylesheet">
-	<link rel="stylesheet" href="libs/owl-carousel/assets/owl.carousel.min.css" />
-	<link rel="stylesheet" href="libs/owl-carousel/assets/owl.theme.default.min.css" />
+	<link rel="stylesheet" href="libs/fullpage/fullpage.css" />
 	<link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-	<header>
-		<nav class="navigation-wrapper"><a href="#">
-				<div class="logo"><img src="img/logo.png" alt="logo" width="50px" height="auto" /></div>
-			</a>
-			<ul class="navigation">
-				<li class="navigation__item"><a class="navigation__link" href="#">Продукты</a></li>
-				<li class="navigation__item"><a class="navigation__link" href="#">Регламент применения</a></li>
-				<li class="navigation__item"><a class="navigation__link" href="#">Опыт</a></li>
-				<li class="navigation__item"><a class="navigation__link" href="#">Компания</a></li>
-				<li class="navigation__item"><a class="navigation__link" href="#">СМИ о нас</a></li>
-			</ul>
-			<div class="phone">
-				<p>+7 (495) 324 44 43<img src="img/phone.svg" alt="phone" /></p>
-			</div>
-			<div class="burger-menu">
-				<div class="burger-menu__image"></div>
-			</div>
-		</nav>
-		<section>
+	<div class="dots-container">
+		<div class="dot dot--active">
+			<div class="dot-title dot-title--active">Продукты</div>
+		</div>
+		<div class="dot">
+			<div class="dot-title">Регламент применения</div>
+		</div>
+		<div class="dot">
+			<div class="dot-title">Опыт</div>
+		</div>
+		<div class="dot">
+			<div class="dot-title">Компания</div>
+		</div>
+		<div class="dot">
+			<div class="dot-title">СМИ о нас</div>
+		</div>
+		<div class="dot">
+			<div class="dot-title">Магазин</div>
+		</div>
+	</div>
+	<div class="blockmenu">
+		<div class="blockmenu-close"><img src="img/popup-close.svg" alt="toggle" /></div>
+		<ul class="menu">
+			<li class="navigation__item"><a class="navigation__link" href="#products">Продукты</a></li>
+			<li class="navigation__item"><a class="navigation__link" href="#reglament">Регламент применения</a></li>
+			<li class="navigation__item"><a class="navigation__link" href="#">Опыт</a></li>
+			<li class="navigation__item"><a class="navigation__link" href="#">Компания</a></li>
+			<li class="navigation__item"><a class="navigation__link" href="#">СМИ о нас</a></li>
+			<li class="navigation__item"><a class="navigation__link" href="#">Магазин</a></li>
+		</ul>
+	</div>
+	<div id="fullpage">
+		<section class="section"><a href="#products"></a>
+			<nav class="navigation-wrapper"><a href="#">
+					<div class="logo"><img src="img/logo.png" alt="logo" width="50px" height="auto" /></div>
+				</a>
+				<ul class="navigation">
+					<li class="navigation__item"><a class="navigation__link" href="#">Продукты</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#">Регламент применения</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#">Опыт</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#">Компания</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#">СМИ о нас</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#">Магазин</a></li>
+				</ul>
+				<div class="phone">
+					<p>+7 (495) 324 44 43<img src="img/phone.svg" alt="phone" /></p>
+				</div>
+				<div class="burger-menu">
+					<div class="burger-menu__image"></div>
+				</div>
+			</nav>
 			<div class="header-content container">
 				<div class="logo-title-wrapper"><img src="img/logo.png" alt="logo" />
 					<h1 class="header-content__title">Hypophys</h1>
 				</div>
-				<div class="header-content__description"></div>
+				<div class="header-content__description">
+					<div class="header-content__background"><img src="img/molecular-net.png" alt="logo" /></div>
+				</div>
 			</div>
 		</section>
-		<div class="dots-container">
-			<div class="dot dot--active">
-				<div class="dot-title dot-title--active">Продукты</div>
-			</div>
-			<div class="dot">
-				<div class="dot-title">Регламент</div>
-			</div>
-			<div class="dot">
-				<div class="dot-title">Регламент</div>
-			</div>
-			<div class="dot">
-				<div class="dot-title">Компания</div>
-			</div>
-			<div class="dot">
-				<div class="dot-title">Регламент</div>
-			</div>
-			<div class="dot">
-				<div class="dot-title">Продукты</div>
-			</div>
-		</div>
-	</header>
+		<section class="section"><a href="#reglament"></a></section>
+		<section class="section"><a href="#experience"></a></section>
+		<section class="section"><a href="#company"></a></section>
+		<section class="section"><a href="#mass-media"></a></section>
+		<section class="section"><a href="#shop"></a></section>
+	</div>
+	<script src="libs/fullpage/fullpage.js"></script>
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
-	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
 </body>
 
 </html>
