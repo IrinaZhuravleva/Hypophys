@@ -1,7 +1,6 @@
 .blockmenu-close img{
     height: 50px;
     width: 50px;
-    /*background-image: url(popup-close.png);*/
     background-repeat: no-repeat;
     z-index: 1000;
     position: absolute;
@@ -9,12 +8,15 @@
     right: 5%;
     cursor: pointer;
 }
+
 .blockmenu {
   position: fixed;
   top: 0;
   width: 100vw;
+
+  // для укороченного меню
+  // width: 220px;
   height: 100%;
-  // background-color: #037EC6;
   background-color: #3d3431;
   // opacity: 0.9;
   display: flex;
@@ -24,23 +26,46 @@
   -webkit-align-items: center;
           align-items: center;
   padding-top: 135px;
-  z-index: 5000;
+  z-index: 1000;
+  transition: all 0.5s;
+  // transition: all 0.3s;
   right: -100vw;
 }
+
+.blockmenu__item {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 267px;
+    height: 1px;
+    background-color: #ffffff;
+  }
+  &:last-child:after {
+    display: none;
+  }
+}
+
 .blockmenu ul {
   list-style: none;
   padding: 0;
 }
+
 .blockmenu li {
   padding-bottom: 30px;
 }
+
 .blockmenu a {
   color: white;
   letter-spacing: 3px;
-  font-size: 22px;
+  font-size: 18px;
   text-decoration: none;
 }
+
 .blockmenu_active {
+  // transition: all 0.5s;
   transition: all 0.3s;
   right: 0;
 }

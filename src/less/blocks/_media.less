@@ -24,11 +24,52 @@
 // }
 
 @media only screen and (max-width : 768px){ 
+	nav#cd-vertical-nav {
+		display: none;
+	}
 
+	.logo-title-wrapper {
+		width: 100%;
+	}
+
+	.header-content__title {
+		margin: 0 auto;
+	}
+
+	.logo-title-wrapper img{
+		display: none;
+	}
+
+	// .header-content__background {
+	// 	display: none;
+	// }
+	// .blockmenu {
+	// 	width: 55vw;
+	// }
+	.container {
+		width: 280px;
+	}
 }
 
+@media (min-width : 768px) and (max-width : 992px) {
+	// .blockmenu {
+	// 	width: 40vw;
+	// }
+	.container {
+		width: 700px;
+	}
+}
 
-@media (max-width : 1400px) {
+@media (min-width : 993px) and (max-width : 1440px) {
+	// .blockmenu {
+	// 	width: 30vw;
+	// }
+	.container {
+		width: 900px;
+	}
+}
+
+@media (max-width : 1441px) {
 	.navigation,
 	.phone {
 		display: none;
@@ -39,6 +80,12 @@
 }
 
 @media (min-width : 1401px) {
+	.container {
+		width: 1440px;
+	}
+	// .blockmenu {
+	// 	width: 20vw;
+	// }
 	.navigation {
 		display: flex;
 	}

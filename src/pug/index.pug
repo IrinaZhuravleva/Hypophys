@@ -3,16 +3,13 @@
 html(lang="en" class=" no-touch" )
 	include pages/_head
 	body
-		//- include pages/_vertical-menu1.pug
-		//- include pages/_burger-menu.pug
-		//- #fullpage
 		include pages/_vertical-menu.pug
 		section#products.cd-section
 			a(href="#products")
 			include pages/_navigation
 			include pages/_header-content
 			include pages/_burger-menu.pug
-			<a href="#section2" class="cd-scroll-down cd-img-replace">scroll down</a>
+			a(href="#section2" class="cd-scroll-down cd-img-replace") scroll down
 			
 		section#reglament.cd-section
 			a(href="#reglament")
