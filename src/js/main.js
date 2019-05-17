@@ -18,16 +18,14 @@ $(document).ready(function(){
     menu.removeClass('blockmenu_active');
   });
 
+  $('.clicker').on("click", function(){
+    console.log('hhhhh');
 
+	// $('.login-text-container').toggleClass('active');
+    $('.header-content__background').toggleClass('active');
+    // }
+  });
 
-	 // // Fullpage scroll
-
-  //   var myFullpage = new fullpage('#fullpage', {
-  //       anchors: ['products', 'reglament', 'experience', 'company', 'mass-media', 'shop'],
-  //       navigation: true,
-  //       navigationPosition: 'left',
-  //       // navigationTooltips: ['First page', 'Second page']
-  //   });
 
 	
 });
