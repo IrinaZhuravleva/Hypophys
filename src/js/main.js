@@ -51,6 +51,7 @@ $(document).ready(function(){
 
   // $('.clicker').on("click", function(){
   //   $('.header-content__background').toggleClass('active');
+  //   $('.block').toggleClass('active');
   // });
 
   var startTimer = function() {
