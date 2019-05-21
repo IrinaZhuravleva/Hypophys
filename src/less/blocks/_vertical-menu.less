@@ -59,7 +59,8 @@ Main components
 .cd-section {
   min-height: 100%;
   position: relative;
-  padding: 2em 0;
+  // padding: 2em 0;
+  padding: 1em 0;
 }
 // .cd-section:nth-of-type(odd) {
 //   background-color: #3e3947;
@@ -179,13 +180,7 @@ Main components
 
 .no-touch #cd-vertical-nav {
   position: fixed;
-
-  /*мои стили*/
-  /*right: 40px;*/
-  left: 40px;
   top: 50%;
-
-  /*//*/
   bottom: auto;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -235,16 +230,10 @@ Main components
 .no-touch #cd-vertical-nav .cd-dot {
   position: relative;
   /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
-  top: 8px;
-  // height: 12px;
-  // width: 12px;
-  // border-radius: 50%;
-
-  // мои стили
-  height: 40px;
-  width: 2px;
-  
-  // background-color: #5e8fb1;
+  // top: 8px;
+  top: -9px;
+  height: 50px;
+  width: 3px;
   background-color: @vertical-menu-lines;
 
 
