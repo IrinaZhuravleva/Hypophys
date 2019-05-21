@@ -59,7 +59,8 @@ Main components
 .cd-section {
   min-height: 100%;
   position: relative;
-  padding: 2em 0;
+  // padding: 2em 0;
+  padding: 1em 0;
 }
 // .cd-section:nth-of-type(odd) {
 //   background-color: #3e3947;
@@ -110,16 +111,24 @@ Main components
 //   }
 // }
 
-.cd-scroll-down {
+.cd-scroll-down__wrapper {
+  height: 44px;
+  width: 100%;
   position: absolute;
-  left: 50%;
-  right: auto;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  
   bottom: 20px;
+}
+
+
+
+.cd-scroll-down {
+  // position: absolute;
+  // left: 45%;
+  // right: auto;
+  
+  // bottom: 20px;
   width: 38px;
   height: 44px;
   background: url("../img/down.svg") no-repeat center center;
@@ -171,13 +180,7 @@ Main components
 
 .no-touch #cd-vertical-nav {
   position: fixed;
-
-  /*мои стили*/
-  /*right: 40px;*/
-  left: 40px;
   top: 50%;
-
-  /*//*/
   bottom: auto;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -187,6 +190,7 @@ Main components
   z-index: 1;
 }
 .no-touch #cd-vertical-nav li {
+  // padding: 0px 2px; //меняет ширину для вертикальных dots
   // text-align: right;
 }
 .no-touch #cd-vertical-nav a {
@@ -226,16 +230,11 @@ Main components
 .no-touch #cd-vertical-nav .cd-dot {
   position: relative;
   /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
-  top: 8px;
-  // height: 12px;
-  // width: 12px;
-  // border-radius: 50%;
-
-  // мои стили
-  height: 40px;
-  width: 2px;
-  
-  background-color: #5e8fb1;
+  // top: 8px;
+  top: -9px;
+  height: 50px;
+  width: 3px;
+  background-color: @vertical-menu-lines;
 
 
   -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;

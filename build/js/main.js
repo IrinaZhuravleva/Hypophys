@@ -1,15 +1,44 @@
 $(document).ready(function(){
 
-  var link = $('.burger-menu');
+  // var link = $('.burger-menu');
+  // var link_active = $('.blockmenu__link');
+  // var menu = $('.blockmenu');
+  // var close = $('.blockmenu-close');
+
+  // var menuBtn =$('.menu-btn');
+
+  // link.click(function(){
+  //   link.toggleClass('menu-link_active');
+  //   menu.toggleClass('blockmenu_active');
+
+
+  //   menuBtn.toggleClass('menu-btn_active');
+
+  // });
+  // close.click(function(){
+  //   menu.removeClass('blockmenu_active');
+  // });
+  // link_active.click(function(){
+  //   menu.removeClass('blockmenu_active');
+  // });
+
+
+
+  // var link = $('.burger-menu');
   var link_active = $('.blockmenu__link');
   var menu = $('.blockmenu');
-  var close = $('.blockmenu-close');
+  // var menu = $('.menu');
+  var close = $('.menu-btn_active');
 
+  var menuBtn =$('.menu-btn');
 
-  link.click(function(){
-    link.toggleClass('menu-link_active');
+  menuBtn.click(function(){
+    menuBtn.toggleClass('menu-link_active');
     menu.toggleClass('blockmenu_active');
-    // link.css('display', 'none');
+    // menu.addClass('blockmenu_active');
+
+    menuBtn.toggleClass('menu-btn_active');
+
   });
   close.click(function(){
     menu.removeClass('blockmenu_active');
@@ -18,16 +47,17 @@ $(document).ready(function(){
     menu.removeClass('blockmenu_active');
   });
 
+  //
 
+  // $('.clicker').on("click", function(){
+  //   $('.header-content__background').toggleClass('active');
+  // });
 
-	 // // Fullpage scroll
+  var startTimer = function() {
+    $('.header-content__background').addClass('active');
+  };
 
-  //   var myFullpage = new fullpage('#fullpage', {
-  //       anchors: ['products', 'reglament', 'experience', 'company', 'mass-media', 'shop'],
-  //       navigation: true,
-  //       navigationPosition: 'left',
-  //       // navigationTooltips: ['First page', 'Second page']
-  //   });
+  setTimeout(startTimer, 500);
 
 	
 });

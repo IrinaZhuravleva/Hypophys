@@ -1,5 +1,5 @@
 .header-content {
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .logo-title-wrapper {
@@ -10,30 +10,132 @@
 	align-items: center;
 }
 
-.header-content__description {
-	// background-image: url(img/molecular-net.png);
+//
 
-
-	display: flex;
-	justify-content: space-between;
-	margin-top: 80px;
+.clicker {
 	position: relative;
-
+	margin: 0 auto;
+	// margin-top: 100px;
+	margin-top: 80px;
 }
+
+.clicker:hover {
+  cursor: pointer;
+}
+
+.header-content__background-container {
+	//donne l'arrivee de haut du document
+	height: 100%;
+
+	// для планшетов от 768
+	// width: 
+
+	// для мобилок
+	// width: 280px;
+	// height: 100px;
+}
+
+
 
 .header-content__background {
-	background-image: url(img/molecular-net.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-	
-	width: 757px;
-    margin: 0 auto;
-	// background-size: cover;
 	// position: absolute;
-	// top: 50px;
-	// left: 354px; 
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	img {
+		// для мобилок
+		width: 280px;
+		height: auto;
+	}
+	&.active {
+		width: 100%;
+		height: 100%;
+		transition: width 1.9s, height 1.9s;
+	}
 }
+
+//
+
+.header-content__background-container {
+	
+	height: 100%;
+
+	// для планшетов от 768
+	// width: 
+
+	// для мобилок
+	// width: 280px;
+	// height: 100px;
+}
+
+
+
+.header-content__background {
+	// position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	img {
+		// для мобилок
+		width: 280px;
+		height: auto;
+	}
+	&.active {
+		width: 100%;
+		height: 100%;
+		transition: width 1.9s, height 1.9s;
+	}
+}
+
+//мои опыты с подгонкой
+.header-content__background img {
+	    position: absolute;
+    top: 55px;
+    left: 138px;
+}
+
+@media (min-width: 993) {
+	.header-content__background img 
+    {width: 711px!important;}	
+}
+
+
+
+// @media screen (max-width: 768px){
+// 	.clicker,
+	// .header-content__background-container,
+	// .header-content__background img {
+// 		// для мобилок до 768
+// 		margin-top: 50px;
+// 		width: 300px;
+// 		height: 100px;}
+// }
+
+@media (min-width : 769px) and (max-width : 992px) { 
+	.clicker,
+	.header-content__background-container,
+	.header-content__background img {
+		// для планшетов от 768 до 1024
+		width: 600px;
+		height: auto;
+	}
+}
+
+@media (min-width : 993px){
+	.clicker,
+	.header-content__background-container,
+	.header-content__background img {
+	// от 1024
+		// width: 756px;
+		width: 500px;
+		height: auto;
+	}
+}
+
 
 .header-content__title {
 	margin: 0;
@@ -42,25 +144,23 @@
     font-size: 48px;
     text-align: center;
     font-weight: 200;
-    span {
-    	opacity: 0.5;
-    }
 }
+//
 
-.header-content ul {
-	margin: 0;
-	padding: 0;
-	padding-left: 125px;
-	width: 572px;
-	list-style-type: none;
-	li {
-		font-size: 13px;
-		padding-bottom: 15px;
-		&:first-child {
-			margin-top: 50px;
-		}
-	}
-}
+// .header-content ul {
+// 	margin: 0;
+// 	padding: 0;
+// 	padding-left: 125px;
+// 	width: 572px;
+// 	list-style-type: none;
+// 	li {
+// 		font-size: 13px;
+// 		padding-bottom: 15px;
+// 		&:first-child {
+// 			margin-top: 50px;
+// 		}
+// 	}
+// }
 
 
 

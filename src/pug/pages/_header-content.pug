@@ -2,20 +2,11 @@
 	.logo-title-wrapper
 		img(src="img/logo.png", alt="logo")
 		h1.header-content__title Hypophys
-	.header-content__description
-		.header-content__background
-			img(src="img/molecular-net.png", alt="logo")
-		//- ul.header-content__description--item Состав
-		//- 	li.header-content__description--list Элементы питания, включая микроэлементы в хелатной форме. Массовая доля питательных веществ %:
-		//- 	li.header-content__description--list Гуминовые и фульвокислоты - 10% pH 7,3-8,2; Азот (N) 1,5-2,5 Калий (К20) 2,5-3,5 Фосфор (P205) 0,9-1,0; Кальций (Ca) 0,52 Сера (S) 3 Кремний Si 1,5.
-		//- 	li.header-content__description--list Массовая доля микроэлементов (в том числе в хелатной форме) %: Fe 0,28 Cu 0,0025 Zn 0,0052 Mn 0,004 Mo 0,0002 Мд 0б36 В 0б0053 Cr 0,007 Co 0,006 Se 0,003
-		//- .header-content__description--item Содержание 10% гуминовых веществ
-		//- .header-content__description--item При применении экономим до 40% на минералах и до 15% пестицидов
-		//- .header-content__description--item Борьба с загрязнением почвы
-		//- .header-content__description--item Ускорение времени созревания
-		//- .header-content__description--item Борьба с засухой
-		//- .header-content__description--item Укрепление корневой системы
-		//- .header-content__description--item Увеличение иммунитета растений 
-		//- .header-content__description--item Улучшение экологичности
+	.header-content__main-container
+		.clicker
+			.header-content__background-container
 
-
+				.header-content__background
+					img(src="img/molecular-net.png" alt="logo")
+			
+				include _float-elements-products
