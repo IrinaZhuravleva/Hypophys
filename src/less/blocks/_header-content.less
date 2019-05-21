@@ -1,7 +1,3 @@
-// .header-content {
-// 	margin-top: 20px;
-// }
-
 .logo-title-wrapper {
 	width: 346px;
 	margin: 0 auto;
@@ -15,9 +11,8 @@
 .clicker {
 	position: relative;
 	margin: 0 auto;
-	// margin-top: 100px;
 	margin-top: 70px;
-	height: 700px;//убрать
+	// height: 700px;//убрать
 	&:hover {
 		cursor: pointer;
 	}
@@ -46,8 +41,8 @@
 	height: 0;
 	img {
 		// для мобилок
-		width: 280px;
-		height: auto;
+		// width: 280px;
+		// height: auto;
 	}
 	&.active {
 		width: 100%;
@@ -58,56 +53,21 @@
 
 //
 
-.header-content__background-container {
-	
-	height: 100%;
-
-	// для планшетов от 768
-	// width: 
-
-	// для мобилок
-	// width: 280px;
-	// height: 100px;
-}
-
-
-
-.header-content__background {
-	// position: absolute;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 0;
-	img {
-		// для мобилок
-		width: 280px;
-		height: auto;
-	}
-	&.active {
-		width: 100%;
-		height: 100%;
-		transition: width 1.9s, height 1.9s;
-	}
-}
-
-//мои опыты с подгонкой
 .header-content__background img {
-	    position: absolute;
-    top: 55px;
-    left: 138px;
+    position: absolute;
+    top: 63px;
+    left: -4px;
 }
 
-@media (min-width: 993) {
-	.header-content__background img 
-    {width: 711px!important;}	
-}
+// @media (min-width: 993) {
+// 	.header-content__background img 
+//     {width: 711px!important;}	
+// }
 
 
 
 // @media screen (max-width: 768px){
 // 	.clicker,
-	// .header-content__background-container,
 	// .header-content__background img {
 // 		// для мобилок до 768
 // 		margin-top: 50px;
@@ -115,41 +75,33 @@
 // 		height: 100px;}
 // }
 
-@media (min-width : 769px) and (max-width : 992px) { 
-	.clicker,
-	.header-content__background-container,
-	.header-content__background img {
-		// для планшетов от 768 до 1024
-		width: 600px;
-		height: auto;
-	}
-}
-
-@media (min-width : 993px){
-	.clicker,
-	.header-content__background-container,
-	.header-content__background img {
-	// от 1024
-		// width: 756px;
-		width: 500px;
-		height: auto;
-	}
-}
+// @media (min-width : 769px) and (max-width : 992px) { 
+// 	.clicker,
+// 	.header-content__background img {
+// 		// для планшетов от 768 до 1024
+// 		width: 600px;
+// 		height: auto;
+// 	}
+// }
 
 //подгон
 
-@media (min-width: 993px) {
-.clicker, 
-.header-content__background-container, 
+// @media (min-width: 993px) {
+// 	.clicker, 
+// 	.header-content__background img {
+// 		width: 713px;
+// 		height: auto;
+// 	}
+
+// }
+
+.clicker,
 .header-content__background img {
-width: 713px;
-height: auto;
-}}
-.header-content__background img {
-    position: absolute;
-    top: 63px;
-    left: -4px;
+	width: 713px;
+	height: auto;
 }
+
+
 
 
 
