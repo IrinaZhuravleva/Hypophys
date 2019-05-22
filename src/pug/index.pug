@@ -2,35 +2,37 @@
 //- html(lang="en" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" )
 html(lang="en" class=" no-touch" )
 	include pages/_head
+	include pages/_burger-menu
 	body
-		include pages/_vertical-menu.pug
+		include pages/_vertical-menu
 		section#products.cd-section
 			a(href="#products")
 			include pages/_navigation
 			include pages/_header-content
-			include pages/_burger-menu.pug
-			.cd-scroll-down__wrapper
-				a(href="#reglament" class="cd-scroll-down cd-img-replace")
+			include pages/_animate-number
+
+		//- 	.cd-scroll-down__wrapper
+		//- 		a(href="#reglament" class="cd-scroll-down cd-img-replace")
 			
-		section#reglament.cd-section
+		section#reglament.cd-section.accordeon
 			a(href="#reglament")
 				a(href="#products" class="cd-scroll-up cd-img-replace")
 				h1 Регламент
-		section#experience.cd-section
+		section#experience.cd-section.accordeon
 			a(href="#experience")
 				a(href="#products" class="cd-scroll-up cd-img-replace")
-				h1 Опыт
-		section#company.cd-section
-			a(href="#company")
+		//- 		h1 Опыт
+		//- section#company.cd-section
+		//- 	a(href="#company")
 				a(href="#products" class="cd-scroll-up cd-img-replace")
 				h1 Компания
-		section#mass-media.cd-section
-			a(href="#mass-media")
-				a(href="#products" class="cd-scroll-up cd-img-replace")
-				h1 СМИ о нас
-		section#shop.cd-section
-			a(href="#shop")
-				a(href="#products" class="cd-scroll-up cd-img-replace")
-				h1 Магазин
+		//- section#mass-media.cd-section
+		//- 	a(href="#mass-media")
+		//- 		a(href="#products" class="cd-scroll-up cd-img-replace")
+		//- 		h1 СМИ о нас
+		//- section#shop.cd-section
+		//- 	a(href="#shop")
+		//- 		a(href="#products" class="cd-scroll-up cd-img-replace")
+		//- 		h1 Магазин
 	
 	include pages/_foot

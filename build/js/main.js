@@ -1,42 +1,14 @@
 $(document).ready(function(){
 
-  // var link = $('.burger-menu');
-  // var link_active = $('.blockmenu__link');
-  // var menu = $('.blockmenu');
-  // var close = $('.blockmenu-close');
-
-  // var menuBtn =$('.menu-btn');
-
-  // link.click(function(){
-  //   link.toggleClass('menu-link_active');
-  //   menu.toggleClass('blockmenu_active');
-
-
-  //   menuBtn.toggleClass('menu-btn_active');
-
-  // });
-  // close.click(function(){
-  //   menu.removeClass('blockmenu_active');
-  // });
-  // link_active.click(function(){
-  //   menu.removeClass('blockmenu_active');
-  // });
-
-
-
-  // var link = $('.burger-menu');
+  // подключение всплывающего меню
   var link_active = $('.blockmenu__link');
   var menu = $('.blockmenu');
-  // var menu = $('.menu');
   var close = $('.menu-btn_active');
-
   var menuBtn =$('.menu-btn');
 
   menuBtn.click(function(){
     menuBtn.toggleClass('menu-link_active');
     menu.toggleClass('blockmenu_active');
-    // menu.addClass('blockmenu_active');
-
     menuBtn.toggleClass('menu-btn_active');
 
   });
@@ -47,18 +19,65 @@ $(document).ready(function(){
     menu.removeClass('blockmenu_active');
   });
 
-  //
+  //анимация молекулы и ее текстовых элементов
 
   // $('.clicker').on("click", function(){
   //   $('.header-content__background').toggleClass('active');
   //   $('.block').toggleClass('active');
   // });
 
-  var startTimer = function() {
-    $('.header-content__background').addClass('active');
-  };
+  
 
-  setTimeout(startTimer, 500);
+  //анимация чисел
+
+  // <p>Fun level <span id="fun-level" style="color: red;">0 %</span>.</p>
+
+var percent_number_step = $.animateNumber.numberStepFactories.append(' %')
+
+$('#fun-level-1').animateNumber(
+  {
+    number: 20,
+    color: 'green',
+    'font-size': '30px',
+
+    numberStep: percent_number_step
+  },
+  {
+    easing: 'swing',
+    // duration: 15000
+    duration: 5000
+  }
+);
+
+$('#fun-level-2').animateNumber(
+  {
+    number: 40,
+    color: 'green',
+    'font-size': '30px',
+
+    numberStep: percent_number_step
+  },
+  {
+    easing: 'swing',
+    // duration: 15000
+    duration: 5000
+  }
+);
+
+$('#fun-level-3').animateNumber(
+  {
+    number: 15,
+    color: 'green',
+    'font-size': '30px',
+
+    numberStep: percent_number_step
+  },
+  {
+    easing: 'swing',
+    // duration: 15000
+    duration: 5000
+  }
+);
 
 	
 });
